@@ -11,6 +11,8 @@ CREATE TABLE tournaments (
   season_name TEXT NOT NULL,
   teams_count INTEGER NOT NULL,
   team_budget_cap INTEGER NOT NULL,
+  is_auction_start_approved INTEGER NOT NULL DEFAULT 0,
+  auction_start_approved_at TEXT,
   created_at TEXT NOT NULL
 );
 
